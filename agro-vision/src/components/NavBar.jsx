@@ -1,5 +1,5 @@
 // import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+// import { Link, Navigate } from "react-router-dom";
 import React from "react";
 import "../css/NavBar.css";
 
@@ -23,13 +23,13 @@ const Navbar = () => {
     <nav className="nav">
 
       <div className="nav-logo">
-        <img src="/static/images/logot.png" style={{ backdropFilter: 'greyscale(1)' }} alt="LOGO" />
+        <img src="/images/logot.png" style={{ backdropFilter: 'greyscale(1)' }} alt="LOGO" />
         <h3 id="logoText">AGROVISION AI</h3>
       </div>
 
       <div className="nav-menu" id="navMenu">
         <ul>
-          <li><a href="/" className="link active">Home</a></li>
+          <li><a href="/" className="link">Home</a></li>
           <li><a href="/services" className="link">Services</a></li>
           <li><a href="/about" className="link">About Us</a></li>
           <li><a href="/help" className="link">Help</a></li>

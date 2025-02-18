@@ -1,23 +1,37 @@
 import React from 'react';
-import '../css/style-about.css';
+import '../css/About.css';
 import NavBar from './NavBar';
 
 const About = () => {
+
+  const myMenuFunction = () => {
+    const menu = document.getElementById("navMenu");
+    if (menu.className === "nav-menu") {
+        menu.className += " responsive";
+    } else {
+        menu.className = "nav-menu";
+    }
+  };
+
   return (
     <div>
       <div id="video">
         <video id="video" muted style={{ width: '100%', height: '100%' }}>
-          <source src="/static/video/mellon-4 (1).mp4" type="video/mp4" />
+          <source src="/video/mellon-4 (1).mp4" type="video/mp4" />
         </video>
       </div>
 
       <NavBar />
 
+      <div class="nav-menu-btn">
+        <i class="bx bx-menu" onclick={myMenuFunction}></i>
+      </div>
+
       <section className="intro-section">
         <div className="container">
           <div className="intro-content">
             <div className="intro-image">
-              <img src="/static/images/watering.avif" alt="Intro Image" />
+              <img src="/images/watering.avif" alt="Intro Image" />
             </div>
             <div className="intro-text">
               <h2>What do we do?</h2>
@@ -34,7 +48,7 @@ const About = () => {
                 </ul>
               </p>
               <div className="gif-container">
-                <img src="/static/video/farmer-gif.gif" alt="" />
+                <img src="/video/farmer-gif.gif" alt="" />
                 <p>Farmers are the backbone of our food system, working tirelessly to cultivate the land and produce the nourishment that sustains us all. Their dedication and hard work ensure that we have access to fresh, healthy food every day. By bridging the gap between the land and our tables, farmers truly are the heart of the food chain.</p>
               </div>
             </div>
@@ -48,7 +62,7 @@ const About = () => {
           <div className="card">
             <div className="card-inner">
               <div className="card-front">
-                <img src="/static/images/planting.avif" alt="Image 1" />
+                <img src="/images/planting.avif" alt="Image 1" />
               </div>
               <div className="card-back">
                 <h3>Empowerment</h3>
@@ -59,7 +73,7 @@ const About = () => {
           <div className="card">
             <div className="card-inner">
               <div className="card-front">
-                <img src="/static/images/planting.avif" alt="Image 2" />
+                <img src="/images/planting.avif" alt="Image 2" />
               </div>
               <div className="card-back">
                 <h3>Innovation</h3>
@@ -70,7 +84,7 @@ const About = () => {
           <div className="card">
             <div className="card-inner">
               <div className="card-front">
-                <img src="/static/images/planting.avif" alt="Image 3" />
+                <img src="/images/planting.avif" alt="Image 3" />
               </div>
               <div className="card-back">
                 <h3>Crop Yield Prediction</h3>

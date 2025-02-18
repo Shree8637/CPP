@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import '../css/style-home.css';
+import '../css/Home.css';
 import Navbar from './NavBar';
 
-function Home() {
+function Home() { 
     const [slideIndex, setSlideIndex] = useState(0);
 
     useEffect(() => {
@@ -19,18 +19,19 @@ function Home() {
 
     return (
         <div className="wrapper">
+
             <Navbar />
 
             <div className="carousel">
                 <div className="carousel-images">
                     <div className="mySlides fade">
-                        <img src="../static/images/cor1.png" style={{ width: '100%' }} alt="Image 1" />
+                        <img src="/images/cor1.png" style={{ width: '100%' }} alt="slide window 1" />
                     </div>
                     <div className="mySlides fade">
-                        <img src="../static/images/cor2.png" style={{ width: '100%' }} alt="Image 2" />
+                        <img src="/images/cor2.png" style={{ width: '100%' }} alt="slide window 2" />
                     </div>
                     <div className="mySlides fade">
-                        <img src="../static/images/cor3.png" style={{ width: '100%' }} alt="Image 3" />
+                        <img src="/images/cor3.png" style={{ width: '100%' }} alt="slide window 3" />
                     </div>
                 </div>
             </div>
@@ -38,7 +39,7 @@ function Home() {
             <div className="content">
                 <div className="card">
                     <div className="card-image">
-                        <img src="/static/images/farmerindian.avif" alt="Farmer Image" />
+                        <img src="/images/farmerindian.avif" alt="Farmer" />
                     </div>
                     <div className="card-text">
                         <h1>"Accurate Crop Yield Predictions"</h1>
@@ -72,7 +73,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="card-image">
-                        <img src="/static/images/mirror-img2.jpg" alt="Farmer Image" />
+                        <img src="/images/mirror-img2.jpg" alt="Farmer" />
                     </div>
                 </div>
             </div>
@@ -98,12 +99,12 @@ function Home() {
             <section className="featured-projects">
                 <h2>Featured Projects</h2>
                 <div className="project">
-                    <img src="/static/images/Farming by Donna Jos Sia.jpeg" alt="Project 1" style={{ height: '50%', width: '50%' }} />
+                    <img src="/images/Farming by Donna Jos Sia.jpeg" alt="Project 1" style={{ height: '50%', width: '50%' }} />
                     <h3>Smart Crop Yield Prediction System</h3>
                     <p>This project leverages advanced machine learning algorithms to predict crop yields with high accuracy. By analyzing historical data and current environmental conditions, the system helps farmers make informed decisions about planting and harvesting, ultimately maximizing their productivity and profitability. The project has been widely adopted and praised for its ease of use and significant impact on agricultural efficiency.</p>
                 </div>
                 <div className="project">
-                    <img src="/static/images/fertilizer.jpeg" alt="Project 2" style={{ height: '50%', width: '50%' }} />
+                    <img src="/images/fertilizer.jpeg" alt="Project 2" style={{ height: '50%', width: '50%' }} />
                     <h3>AI-Powered Crop and Fertilizer Suggestion Tool</h3>
                     <p>This innovative tool provides farmers with tailored recommendations on the best crops to plant and the most effective fertilizers to use, based on soil conditions, climate data, and other relevant factors. The AI-driven system ensures that farmers receive precise guidance, leading to improved crop quality and sustainable farming practices. This project has been instrumental in helping farmers optimize their resources and achieve better yields.</p>
                 </div>

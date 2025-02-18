@@ -1,38 +1,19 @@
 import React from 'react';
+import '../css/Services.css';
+import Navbar from './NavBar';
 
 const Services = () => {
   return (
     <div className="wrapper">
-      <nav className="nav">
-        <div className="nav-logo">
-          {/* <p>LOGO .</p> */}
-          {/* <img src="images/logo55.png" alt="LOGO" height="150" style={{ padding: '10%' }} /> */}
-          <img src="/static/images/logot.png" alt="LOGO" />
-          <h3 id="logoText">AGROVISION AI</h3>
-        </div>
+      
+      <Navbar />
 
-        <div className="nav-menu" id="navMenu">
-          <ul>
-            <li><a href="/" className="link">Home</a></li>
-            <li><a href="/services" className="link active">Services</a></li>
-            <li><a href="/about" className="link">About Us</a></li>
-            <li><a href="/help" className="link">Help</a></li>
-            <li><a href="/login" className="link">Login</a></li>
-          </ul>
-        </div>
+      <div class="nav-menu-btn">
+        {/* <i class="bx bx-menu" onclick={myMenuFunction}></i> */}
+        <i class="bx bx-menu"></i>
+      </div>
 
-        <div className="nav-menu-btn">
-          <i className="bx bx-menu" onClick={myMenuFunction}></i>
-        </div>
-      </nav>
-
-      {/* Header Section */}
-      {/* <header> */}
-      {/* <h1>AGROVISION AI Services</h1> */}
-      {/* </header> */}
-
-      {/* Top Image Section */}
-      <div className="top-image" style={{ backgroundImage: 'url(/static/video/services-gif.gif)' }}></div>
+      <div className="top-image" style={{ backgroundImage: 'url(/video/services-gif.gif)' }} />
 
       <section className="intro-section">
         <h2>Discover Our Comprehensive Agricultural Solutions</h2>
@@ -46,7 +27,7 @@ const Services = () => {
         <div>VIDEO</div>
         <div className="video-container">
           <video id="service-video" muted autoPlay>
-            <source src="/static/video/about.mp4" type="video/mp4" />
+            <source src="/video/about.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -55,7 +36,7 @@ const Services = () => {
       <section className="services-section">
         <div className="services-container" style={{ justifyContent: 'center', alignItems: 'center' }}>
           <div className="service-card">
-            <img src="/static/images/crop-nutritions.jpeg" alt="Service 1" />
+            <img src="/images/crop-nutritions.jpeg" alt="Service 1" />
             <h3>Yeid Prediction</h3>
             <p>Our Yield Prediction service uses advanced data analysis to forecast crop yields accurately. By analyzing historical data and current conditions, we provide precise yield forecasts that help farmers plan their harvest and optimize their production strategies. This service leverages our extensive database and user input to deliver actionable insights for maximizing productivity.</p>
             <div className="button-container">
@@ -63,7 +44,7 @@ const Services = () => {
             </div>
           </div>
           <div className="service-card">
-            <img src="/static/images/Rice field with workers - Vietnam by Pascal Fauchard.jpeg" alt="Service 2" />
+            <img src="/images/Rice field with workers - Vietnam by Pascal Fauchard.jpeg" alt="Service 2" />
             <h3>Crop Suggestion</h3>
             <p>Our Crop Suggestion service provides tailored recommendations based on your specific farming conditions. We use a combination of user-provided data and our comprehensive database to suggest the best crops suited to your soil, climate, and market demands. This helps you make informed decisions about which crops to grow for optimal results and profitability.</p>
             <div className="button-container">
@@ -72,7 +53,7 @@ const Services = () => {
           </div>
 
           <div className="service-card">
-            <img src="/static/images/pest.jpeg" alt="Service 3" />
+            <img src="/images/pest.jpeg" alt="Service 3" />
             <h3>Fertilizer/Pesticide Suggestion</h3>
             <p>Our Fertilizer and Pesticide Suggestion service offers expert recommendations for improving crop health and yields. By analyzing your soil data and crop requirements, we suggest the most effective fertilizers and pesticides to use. This ensures that you apply the right products in the right amounts.</p>
             <div className="button-container">
@@ -86,21 +67,21 @@ const Services = () => {
         <h2>Why Choose Us</h2>
         <div className="cards-container">
           <div className="card">
-            <img src="/static/images/two-grey-men.avif" alt="Expertise and Experience" className="card-image" />
+            <img src="/images/two-grey-men.avif" alt="Expertise and Experience" className="card-image" />
             <div className="card-content">
               <h3>Expertise and Experience</h3>
               <p>Our team consists of seasoned experts in agriculture and technology, bringing years of experience to help you achieve the best results.</p>
             </div>
           </div>
           <div className="card">
-            <img src="/static/images/tech.avif" alt="Advanced Technology" className="card-image" />
+            <img src="/images/tech.avif" alt="Advanced Technology" className="card-image" />
             <div className="card-content">
               <h3>Advanced Technology</h3>
               <p>We use cutting-edge AI and machine learning technologies to provide precise and actionable insights, ensuring your farming practices are optimized.</p>
             </div>
           </div>
           <div className="card">
-            <img src="/static/images/sucessful.avif" alt="Customer Success Stories" className="card-image" />
+            <img src="/images/sucessful.avif" alt="Customer Success Stories" className="card-image" />
             <div className="card-content">
               <h3>Customer Success Stories</h3>
               <p>Hear from farmers who have transformed their productivity and profitability with our services. Our success is measured by your success.</p>
@@ -124,7 +105,7 @@ const Services = () => {
             </ol>
           </div>
           <div className="image-content">
-            <img src="/static/images/tractor5.avif" alt="How It Works" />
+            <img src="/images/tractor5.avif" alt="How It Works" />
           </div>
         </div>
       </section>
@@ -148,7 +129,7 @@ const Services = () => {
             </div>
           </div>
           <div className="image-content">
-            <img src="/static/images/grape.png" alt="FAQ" />
+            <img src="/images/grape.png" alt="FAQ" />
           </div>
         </div>
       </section>
@@ -198,14 +179,5 @@ const Services = () => {
   );
 };
 
-const myMenuFunction = () => {
-  const i = document.getElementById("navMenu");
-
-  if (i.className === "nav-menu") {
-    i.className += " responsive";
-  } else {
-    i.className = "nav-menu";
-  }
-};
 
 export default Services;

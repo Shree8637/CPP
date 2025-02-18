@@ -1,24 +1,14 @@
 import React from 'react';
-import '../css/style-help.css';
+import '../css/Help.css';
+import Navbar from './NavBar';
 
 const Help = () => {
   return (
     <div className="wrapper">
       <nav className="nav">
-        <div className="nav-logo">
-          <img src="/static/images/logot.png" alt="LOGO" />
-          <h3 id="logoText">AGROVISION AI</h3>
-        </div>
+        
 
-        <div className="nav-menu" id="navMenu">
-          <ul>
-            <li><a href="/" className="link">Home</a></li>
-            <li><a href="/services" className="link">Services</a></li>
-            <li><a href="/about" className="link">About Us</a></li>
-            <li><a href="/help" className="link active">Help</a></li>
-            <li><a href="/login" className="link">Login</a></li>
-          </ul>
-        </div>
+        <Navbar />
 
         <div className="nav-menu-btn">
           {/* <i className="bx bx-menu" onClick={myMenuFunction()*}></i> */}
@@ -26,7 +16,7 @@ const Help = () => {
         </div>
       </nav>
 
-      <div className="top-image" style={{ backgroundImage: "url('/static/video/help-gif.gif')" }}></div>
+      <div className="top-image" style={{ backgroundImage: "url('/video/help-gif.gif')" }}></div>
 
       <div className="help-banner">
         <div className="help-content">
@@ -48,7 +38,7 @@ const Help = () => {
           </div>
 
           <div className="help-image">
-            <img src="/static/images/farmers.png" alt="Getting Started" style={{ height: '400px', width: 'auto' }} />
+            <img src="/images/farmers.png" alt="Getting Started" style={{ height: '400px', width: 'auto' }} />
           </div>
 
           <section id="help-content" style={{ justifyContent: 'center', textAlign: 'center', textSizeAdjust: '10px' }}>
@@ -64,9 +54,9 @@ const Help = () => {
           </section>
 
           <div className="gif-help" style={{ marginLeft: '450px' }}>
-            <img src="/static/images/farmers.webp" alt="" style={{ height: '200px' }} />
-            <img src="/static/images/strawbery.webp" alt="farmers" style={{ height: '200px' }} />
-            <img src="/static/images/3-help.webp" alt="" style={{ height: '200px' }} />
+            <img src="/images/farmers.webp" alt="" style={{ height: '200px' }} />
+            <img src="/images/strawbery.webp" alt="farmers" style={{ height: '200px' }} />
+            <img src="/images/3-help.webp" alt="" style={{ height: '200px' }} />
           </div>
         </div>
       </section>
@@ -74,7 +64,7 @@ const Help = () => {
       <section className="help-section">
         <div className="help-container">
           <div className="help-image">
-            <img src="/static/images/two-basket.avif" alt="FAQ" />
+            <img src="/images/two-basket.avif" alt="FAQ" />
           </div>
           <div className="help-content">
             <h2>FAQ</h2>
